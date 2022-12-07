@@ -1,0 +1,5 @@
+2 versions from flag -time=cumu or time=indiv
+cumu time sets one timer for entire quiz
+indiv time sets timer for each question
+as the seconds specified by limit.
+It is pluggable.

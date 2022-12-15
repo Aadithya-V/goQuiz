@@ -55,7 +55,7 @@ problemloop:
 	fmt.Printf("You scored %d out of %d.\n", correct, len(problems))
 }
 
-// struct problem holds parsed individual records.
+// problem holds parsed individual records.
 type problem struct {
 	q string // Holds the question
 	a string // Holds the answer
@@ -76,8 +76,9 @@ func parseLines(lines [][]string) []problem {
 	return ret
 }
 
-// Used to exit application in case of runtime errors.
-// Prints the error message to the console.
+// exit prints the error message to the console and 
+//exits application. Used here as shorthand for runtime errors.
+
 func exit(msg string) {
 	fmt.Println(msg)
 	os.Exit(1)
